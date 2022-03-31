@@ -14,6 +14,10 @@ void BusCounter::board()
     {
         bus_count++;
     }
+    else
+    {
+        bus_count = capacity;
+    }
 }
 
 void BusCounter::exit()
@@ -24,7 +28,7 @@ void BusCounter::exit()
     }
 }
 
-BusCounter::get_count()
+int BusCounter::get_count()
 {
     return (bus_count);
 }
